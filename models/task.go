@@ -124,10 +124,10 @@ func (task *Task) Callback() (err error) {
 		return err
 	}
 
-	if result["success"].(float64) != 0 {
-		log.Println("---------" + result["message"].(string))
-		return errors.New(result["message"].(string))
-	}
+	//if result["success"].(float64) != 0 {
+	//	log.Println("---------" + result["message"].(string))
+	//	return errors.New(result["message"].(string))
+	//}
 	return nil
 }
 
